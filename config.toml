@@ -1,0 +1,59 @@
+baseURL = "http://blog.wsmelton.info/"
+languageCode = "en-us"
+author = "Shawn Melton"
+title = "Shawn Melton"
+theme = "cocoa-hugo-theme"
+googleAnalytics     = "UA-85098649-1"
+
+[permalinks]
+latest  = "/"
+blog = "blog/:slug/"
+projects = "/fixed/projects/"
+
+[[menu.main]]
+name                   = "latest"
+weight                 = -190
+url                    = "/"
+
+[[menu.main]]
+name                   = "all post"
+weight                 = -180
+url                    = "/blog"
+
+[[menu.main]]
+name                   = "about"
+weight                 = -170
+identifier             = "about"
+url                    = "/aboutme/"
+
+[[menu.main]]
+name                   = "tags"
+weight                 = -160
+identifier             = "tags"
+url                    = "/tags"
+
+[[menu.main]]
+name                   = "projects"
+weight                 = -100
+identifier             = "projects"
+url                    = "/projects/"
+
+[params]
+include_rss            = true                          # include RSS <link> tag in <head> and show RSS icon
+latestpostscount       = 5                             # how many posts to display on the home page
+i18n_flags             = false                         # whether to display small country flags for available translations
+author                 = "Shawn Melton"
+cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
+dateform               = "2 Jan 2006"
+dateformfull           = "Mon 2 Jan 2006 15:04 CDT"
+description            = "Life in the day of PowerShell and SQL Server"
+github                 = "//github.com/wsmelton"
+lang                   = "en"
+linkedin               = "//linkedin.com/in/wshawnmelton"
+noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
+twitter                = "//twitter.com/wsmelton"
+
+highlightjs            = true
+highlightjsStyle     = "darcula"
+
+avatar                 = "img/myavatar.jpg"
