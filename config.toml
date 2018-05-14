@@ -16,7 +16,7 @@ weight                 = -190
 url                    = "/"
 
 [[menu.main]]
-name                   = "all post"
+name                   = "all"
 weight                 = -180
 url                    = "/blog"
 
