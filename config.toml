@@ -40,7 +40,7 @@ url                    = "/projects/"
 
 [params]
 include_rss            = true                          # include RSS <link> tag in <head> and show RSS icon
-latestpostscount       = 5                             # how many posts to display on the home page
+latestpostscount       = 6                            # how many posts to display on the home page
 i18n_flags             = false                         # whether to display small country flags for available translations
 author                 = "Shawn Melton"
 cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
