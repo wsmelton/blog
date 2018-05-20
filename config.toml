@@ -1,4 +1,4 @@
-baseURL = "http://blog.wsmelton.info/"
+baseURL = "https://blog.wsmelton.info/"
 languageCode = "en-us"
 author = "Shawn Melton"
 title = "Shawn Melton"
