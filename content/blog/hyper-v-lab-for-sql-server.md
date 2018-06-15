@@ -33,12 +33,12 @@ Obviously what you build is based on what you want to play with, or learn agains
 
 So while most everyone already knows how to install the full edition of Window Server, Core Edition can be a challenge. Instead of filling this post with screenshots I decided to build out a slide deck on building a full lab with Hyper-V. This slide deck walks you through the PowerShell commands for Hyper-V, and then setting up a server running Core Edition as a template. I also include walking through building a server using the template.
 
-I have a <a href="http://blog.wsmelton.info/slides" target="_blank">slide deck landing page</a> that you can find the slide deck, or you can go to it directly from <a href="http://blog.wsmelton.info/slides/hyper-v-lab-build" target="_blank">here</a>. The slide deck requires no special software or plugins to view. It is broken down into the following sections that you can jump right to if you want:
+I have a <a href="https://blog.wsmelton.info/slides" target="_blank">slide deck landing page</a> that you can find the slide deck, or you can go to it directly from <a href="https://blog.wsmelton.info/slides/hyper-v-lab-build" target="_blank">here</a>. The slide deck requires no special software or plugins to view. It is broken down into the following sections that you can jump right to if you want:
 
-- <a href="http://blog.wsmelton.info/slides/hyper-v-lab-build/#/2" target="_blank">Virtual Network Switch</a>
-- <a href="http://blog.wsmelton.info/slides/hyper-v-lab-build/#/6" target="_blank">Create a VM</a>
-- <a href="http://blog.wsmelton.info/slides/hyper-v-lab-build/#/10" target="_blank">Building a Template</a>
-- <a href="http://blog.wsmelton.info/slides/hyper-v-lab-build/#/16" target="_blank">Create VM using the Template</a>
+- <a href="https://blog.wsmelton.info/slides/hyper-v-lab-build/#/2" target="_blank">Virtual Network Switch</a>
+- <a href="https://blog.wsmelton.info/slides/hyper-v-lab-build/#/6" target="_blank">Create a VM</a>
+- <a href="https://blog.wsmelton.info/slides/hyper-v-lab-build/#/10" target="_blank">Building a Template</a>
+- <a href="https://blog.wsmelton.info/slides/hyper-v-lab-build/#/16" target="_blank">Create VM using the Template</a>
 
 I did not include building a domain controller under Windows Core Edition...working on that for the next post.
 

@@ -6,7 +6,7 @@ draft: false
 
 Well you may have noticed the different look and format of my blog. I ended up making the decision last week to go ahead and move off of WordPress.com and moved it be hosted by GitHub. It was an interesting process that if many show interest I can write up what I had to go through.
 
-I also decided to go ahead and get my own domain name: [blog.wsmelton.info](http://blog.wsmelton.info). Which I had to do the sub-domain link with GitHub pages because (as I understand so far) GitHub will not let search engines crawl an apex domain address, but will a sub-domain address because it is just a CNAME record and not an A record. [_It's a DNS thang._]. I also did look into getting a .com or .net, but those were both taken by some law firm in North Carolina. As well, they are charging a good bit more per year for .com addresses now a days. I hope to at some point purchase the SSL (also something not to cheap) so the site can be https compliant. One last thing I also found out was that since the ".info" is a new top-level domain name, there will be some networks that are going to block the site. I'm not exactly sure why, but nothing I can do about that right now.
+I also decided to go ahead and get my own domain name: [blog.wsmelton.info](https://blog.wsmelton.info). Which I had to do the sub-domain link with GitHub pages because (as I understand so far) GitHub will not let search engines crawl an apex domain address, but will a sub-domain address because it is just a CNAME record and not an A record. [_It's a DNS thang._]. I also did look into getting a .com or .net, but those were both taken by some law firm in North Carolina. As well, they are charging a good bit more per year for .com addresses now a days. I hope to at some point purchase the SSL (also something not to cheap) so the site can be https compliant. One last thing I also found out was that since the ".info" is a new top-level domain name, there will be some networks that are going to block the site. I'm not exactly sure why, but nothing I can do about that right now.
 
 GitHub pages has some nice features:
 
@@ -17,11 +17,11 @@ GitHub pages has some nice features:
 - Jekyll is new language for me to learn, always fun. The categories page I actually built on my own, after finding some examples to use. I would like to have them listed in maybe a drop-down or something but still working on figuring that out.
 - Best one, I can use just about any code editor I want to write blogs. I'm not restricted to using LiveWriter or WP's online editor. I'm currently using Visual Code since it supports Markdown.
 
-All in all I am pretty happy with how it turned out. I did have to go review **every** post I wrote since the converstion messed up some formatting. I also had to go update all the image references to the new location.
+All in all I am pretty happy with how it turned out. I did have to go review **every** post I wrote since the conversation messed up some formatting. I also had to go update all the image references to the new location.
 
 ### Current Work
 
-I did write in a post last year that I had taken a new job (I think). I have been working as a Database Consoultant for [Pythian](https://www.pythian.com/about) since February 2015. It has been a fun ride and interesting place to work compared to my last employers. I work full time from home, and don't have to travel. Which I was working from home full time prior to this job, but Pythian has much better setup to handle a global workforce that all work from home.
+I did write in a post last year that I had taken a new job (I think). I have been working as a Database Consultant for [Pythian](https://www.pythian.com/about) since February 2015. It has been a fun ride and interesting place to work compared to my last employers. I work full time from home, and don't have to travel. Which I was working from home full time prior to this job, but Pythian has much better setup to handle a global workforce that all work from home.
 
 #### Fun stuff
 
@@ -45,8 +45,6 @@ I will hopefully start blogging more about some of the commands in dbatools that
 
 ### Future
 
-Well I hope to start writing more frequently. I did a stint over the last year where I was writting for other sites (one being Pythian). However, I found while that was fun to get my content out there it was more work that it was worth. Pythian actually allows me to syndicate my content on their site, and it is part of my of job to blog as I have time. Yeah they pay me to blog about work stuff, it's awesome! I have some post that were published this past year on [Pythian's site](https://www.pythian.com/blog/author/melton) but not on my personal site.
+Well I hope to start writing more frequently. I did a stint over the last year where I was writing for other sites (one being Pythian). However, I found while that was fun to get my content out there it was more work that it was worth. Pythian actually allows me to syndicate my content on their site, and it is part of my of job to blog as I have time. Yeah they pay me to blog about work stuff, it's awesome! I have some post that were published this past year on [Pythian's site](https://www.pythian.com/blog/author/melton) but not on my personal site.
 
 So here is to the future, and hope you find it as fun as I do.
-
-_[Header image source](https://flic.kr/p/6K9jC4)_

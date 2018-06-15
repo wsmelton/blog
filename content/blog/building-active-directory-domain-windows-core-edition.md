@@ -10,7 +10,7 @@ Active Directory offers the PowerShell module <a href="https://technet.microsoft
 
 # Building the Domain
 
-If you recall from the previous post we built out a server running Windows 2012 R2 Core Edition. You can <a href="http://blog.wsmelton.info/slides/hyper-v-lab-build/#/10" target="_blank">check here</a> to see how that server was configured.
+If you recall from the previous post we built out a server running Windows 2012 R2 Core Edition. You can <a href="https://blog.wsmelton.info/slides/hyper-v-lab-build/#/10" target="_blank">check here</a> to see how that server was configured.
 
 There were some initial tools that we installed on that server but to actually create the domain you have to install 2 specific Windows features. You can do that with the following command:
 
