@@ -4,7 +4,7 @@ date: 21 Jan 1979
 draft: false
 ---
 
-I am located in the Southeast US, and grew up in the country cutting wood in the winter and baling hay in the summer. My college career started out wanting to go into Wildlife Science, but biology proved to be my weakness. I ended up switching to a degree in information systems and made it out of college.
+Located in the Southeast US, I grew up in the country playing with tractors and farm equipment. My college career started out wanting to go into Wildlife Science, but biology proved to be my weakness. I ended up switching to a degree in information systems and made it out of college.
 
 I have worked in various operation support roles in my career. Which while some may look at my resume and say I was jumping between jobs, there is more to the story. I worked as contractor with the military for a good portion of my career, so as the contract went to another company I followed along. One advantage that has given me over my career is I have been involved in the whole development process (*maybe not at the same company*) and seen it from various sides of the table.
 
