@@ -13,6 +13,6 @@ If you are not familar with <a href="http://www.sqlsentry.com" target="_blank">S
 
 Well I don't have access to Performance Analzyer for every client I work with (although it would be on the wish list), but I can pull the XML deadlock report from the system_health session in SQL Server 2008 and above. I wondered if I could save that XML data out into a file and open it up in Plan Explorer Pro. So I forced a deadlock to occur on my local instance and pulled it out of the system_health event file. I saved that XML into a file with the XML extension and opened up Plan Explorer...viola:
 
-![](/img/deadlockgraphicalview.png)
+![](/images/deadlockgraphicalview.png)
 
 How freaking cool!!!

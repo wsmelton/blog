@@ -13,18 +13,18 @@ SQL Server 2005 started out requiring SSIS to be installed for maintenance plans
 
 Well I came across this issue on my VMWare View desktop that I utilize for one particular client. I was getting this pretty little box every time I tried to create a new maintenance plan on a newly built SQL Server 2012 Failover Cluster Instance:
 
-![](/img/ssms_object_reference.png)
+![](/images/ssms_object_reference.png)
 
 The version of SSMS I was using:
 
-![](/img/ssms_object_reference2.png)
+![](/images/ssms_object_reference2.png)
 
 I thought I would apply Service Pack 2 to try and resolve it and noted during that installation it was showing “SQLExpress”. Which did bring to mind that I had installed SQL Server 2012 Management Studio for Express when it was announced that it was the full version of SSMS now. I confirmed this by going to the “Setup Bootstrap” and checking the Summary files for the previous installations on the desktop. I found this:
 
-![](/img/ssms_object_reference3.png)
+![](/images/ssms_object_reference3.png)
 
 So I went to Programs and Features and removed it. I then located the installation media for SQL Server 2012 Standard Edition and installed the Management Tools. Then for good measure applied Service Pack 2 for SQL Server 2012:
 
-![](/img/ssms_object_reference4.png)
+![](/images/ssms_object_reference4.png)
 
 Low and behold, that solved my issue. I hope those in the future can find this bit of information useful.

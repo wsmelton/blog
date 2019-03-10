@@ -10,18 +10,18 @@ I have lost count of how many times I come across servers and review their defau
 
 You will generally find the log directory with files that are similar to this:
 
-![](/img/maintenanceplanreportfiles1.png)
+![](/images/maintenanceplanreportfiles1.png)
 
 Now to see how this is configured if you open up a maintenance plan you will find a button on the top of that window pane to open up the reporting setup:
 
-![](/img/maintenanceplan_reportloggingsetup.png)
+![](/images/maintenanceplan_reportloggingsetup.png)
 
-![](/img/maintenanceplan_reportloggingsetup2.png)
+![](/images/maintenanceplan_reportloggingsetup2.png)
 
 I will on every occasion simply uncheck the box for "Generate a test file report" because I do not need hundreds of files created that are simply going to show "successful" attempts:
 
-![](/img/maintenanceplanreportfile.png)
+![](/images/maintenanceplanreportfile.png)
 
 If my maintenance plan is failing I will just use the output file that is configured on a SQL Agent job step, under the Advanced page. There, by default, it will do the one thing you can't have the report and logging in maintenance plan do: overwrite my log file each time. I only need one log file to check in the event something failed.
 
-![](/img/maintenanceplan_sqlagentstepoutputconfig.png)
+![](/images/maintenanceplan_sqlagentstepoutputconfig.png)

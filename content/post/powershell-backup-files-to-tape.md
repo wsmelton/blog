@@ -32,4 +32,4 @@ function Verify-FileBackedUp ($rootdir,[switch]$recurse)
 
 A sample output would look something like below:
 
-![](/img/verify_filebackup.png)
+![](/images/verify_filebackup.png)

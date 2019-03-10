@@ -6,7 +6,7 @@ drafts: false
 
 Wouldn’t it be awesome if that is what it was really called? Maybe not, so what does Biml really stand for?
 
-![](/img/bimllogo.png)
+![](/images/bimllogo.png)
 
 ## Small Background
 

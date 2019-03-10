@@ -6,7 +6,7 @@ draft: false
 
 Forum questions can sometimes cause distractions for me just because they pique my interest at times, especially when I see someone say "Extended Event (XE) session is not showing the expensive query". Extended Events are just...
 
-![](/img/xe_api_cursor_awesome_sause.png)
+![](/images/xe_api_cursor_awesome_sause.png)
 
 The particular forum question that caught my attention span today was on DBA StackExchange (DBA.SE) site: <a href="http://dba.stackexchange.com/q/156206/507" target="_blank">Expensive Query not showing in extended events trace</a>. In this question the individual was troubleshooting the infamous `FETCH_API_CURSORxxxxxxx` queries. They were slowly degrading the performance of their server. In the question they do not give the exact definition of their XE session, at least at the time of this writing. I would make the assumption they are just trying to capture it using actions like rpc_complete, as you do in a Profiler Trace.
 
@@ -50,7 +50,7 @@ $cn.Close()
 
 When you run the script a message box will show the name of the "sysobject" returned, clicking OK will iterate through the number based on the count value provided. You can adjust how many are returned using the `-count` parameter.
 
-![](/img/xe_api_cursor_psscript.png)
+![](/images/xe_api_cursor_psscript.png)
 
 # Profiler
 
@@ -58,7 +58,7 @@ I want to first show you what the capture appears like in Profiler. I setup a ba
 
 I execute the script above, just using a count of 5 this time, and the output from Profiler shows this information:
 
-![](/img/xe_api_cursor_profiler.png)
+![](/images/xe_api_cursor_profiler.png)
 
 Pretty standard to what most folks are used to seeing, the only way to see the query is that first rpc_completed event. As you can also see the cursor event classes show nothing in the text_data value.
 
@@ -226,7 +226,7 @@ You can see the "attach_activity_id_xfer" column shows the same value, so this i
 # Summary
 The main purpose I want you to see is with XE you can simply use 2 events to monitor for the API CURSOR queries. You no longer have to deal with the rpc_completed and capture multiple events just to see the one with the actual query. If you are dealing with a busy system it is going to cut down on the amount of data you are capturing. In the screenshot below you can tell all of those rpc_completed events are not required, just the circled items give me all I need to know:
 
-![](/img/xe_api_cursor_xesession.png)
+![](/images/xe_api_cursor_xesession.png)
 
 Enjoy and happy troubleshooting.
 

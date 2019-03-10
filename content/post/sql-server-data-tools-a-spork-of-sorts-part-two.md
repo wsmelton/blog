@@ -15,20 +15,20 @@ If during the CTP phases of SQL Server 2014 releases you may have caught the blo
 
 - The file downloaded is going to extract the files to a directory of your choice. If you end up having to cancel and start over, you go into that extracted directory and run the setup.exe file. You are actually going to get the SQL Server Installation Center similar to this:
 
-![](/img/spork_p2_1.png)
+![](/images/spork_p2_1.png)
 
 Just click on “New SQL Server stand-alone installation…” and it will bring you to the starting point of accepting the license terms.
 
 - It states in the feature selection that .NET Framework 4.5 is installed through this media. In my instance it actually did not install this and failed with a feature rule check. Might be worth verifying that is installed if you are on a new machine.
 
-![](/img/spork_p2_2.png)
+![](/images/spork_p2_2.png)
 
 - Also note above what it is also going to install, Visual Studio 2012. If you don’t believe it, check out my own laptop:
 
-![](/img/spork_p2_3.png)
+![](/images/spork_p2_3.png)
 
 Once you get done with the installation you are ready to get started with Business Intelligence development.
 
-![](/img/spork_p2_4.png)
+![](/images/spork_p2_4.png)
 
 Happy learning!

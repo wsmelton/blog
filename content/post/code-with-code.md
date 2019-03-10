@@ -41,31 +41,31 @@ You browse to the <a href="https://github.com/sqlcollaborative/dbatools" target=
 
 Click on the "Clone or download" button, and then click the copy button for the HTTPS URL.
 
-<img src="/img/codewithcode_clonedbatools1.png" />
+<img src="/images/codewithcode_clonedbatools1.png" />
 
 Now open Code, and using the Command Pallete (CTRL+SHIFT+P) we can clone the repository. Type in "git" and you see all the commands available.
 
-![](/img/codewithcode_clonedbatools2.png)
+![](/images/codewithcode_clonedbatools2.png)
 
 We want to use "Git: Clone", which you can type that specifically or hit your space bar and start typing "clone". Once you get the phrase unique enough to only show the command you want in Code you can just hit enter.
 
-![](/img/codewithcode_clonedbatools3.png)
+![](/images/codewithcode_clonedbatools3.png)
 
 Enter the URL for your fork of the repository:
 
-![](/img/codewithcode_clonedbatools4.png)
+![](/images/codewithcode_clonedbatools4.png)
 
 Select the folder you want the repository to be cloned to:
 
-![](/img/codewithcode_clonedbatools5.png)
+![](/images/codewithcode_clonedbatools5.png)
 
 You will see an information prompt showing that it is cloning (or downloading) the repository:
 
-![](/img/codewithcode_clonedbatools6.png)
+![](/images/codewithcode_clonedbatools6.png)
 
 Now after all that is done you should get a view similar to this in Explorer of Code:
 
-![](/img/codewithcode_clonedbatools7.png)
+![](/images/codewithcode_clonedbatools7.png)
 
 # Branch
 
@@ -77,25 +77,25 @@ Once you create the branch you will just need to issue the "Git: Publish" comman
 
 As an example I'm just going to make a change to a command, and then commit it to the BlogPost branch. One thing the PowerShell extension provides in code is the ability to check the code against the <a href="https://github.com/PowerShell/PSScriptAnalyzer" target="_blank">PSScriptAnalyzer</a>. This ensures best coding practices are followed, and dbatools adhers to the rules in this tool for the code that is submitted. If I go to "Get-DbaDiskSpace.ps1" I can see one such rule in PSScriptAnalyzer is violated:
 
-![](/img/codewithcode_commit1.png)
+![](/images/codewithcode_commit1.png)
 
 All we need to do to resolve this is remove the "object" and make it a PSCredential type. You can see the intellisense in the PowerShell extension helps us get this changed out quickly.
 
-![](/img/codewithcode_commit2.png)
+![](/images/codewithcode_commit2.png)
 
 Now when you save the file you will see the green squiggle line disappear, and in the view bar you can see the Git icon shows we have an uncommitted change. Keyboard keystroke to bring up the Git side bar is CTRL+SHIFT+G.
 
-![](/img/codewithcode_commit3.png)
+![](/images/codewithcode_commit3.png)
 
 You can use the side bar to enter a commit message. I happen to know at the time of this posting there is an issue open on dbatools for the change we made: <a href="https://github.com/sqlcollaborative/dbatools/issues/379" target="_blank">Issue 379</a>. In this example I did not address all of the items in that issue, but we will pretend we did. The commit message you use is very important in most cases for repositories. When you do a commit you want to include <a href="https://help.github.com/articles/closing-issues-via-commit-messages/" target="_blank">a keyword and the issue number</a>. This will allow GitHub to perform its magic when your pull request gets merged, as it will auto-magically close that issue.
 
 The first line of your commit message is the title. You can hit enter and continue adding more details as a comment.
 
-![](/img/codewithcode_commit4.png)
+![](/images/codewithcode_commit4.png)
 
 Now one warning message you will see on your first commit is setting your user name and email:
 
-![](/img/codewithcode_commit5.png)
+![](/images/codewithcode_commit5.png)
 
 This is easily remedied by opening up the integrated shell and using the following commands to set it. This information is added to every commit you do to a GitHub repository:
 

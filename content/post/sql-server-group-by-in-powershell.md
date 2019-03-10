@@ -27,4 +27,4 @@ $s = New-Object Microsoft.SqlServer.Management.Smo.Server ORKO
 
 The above will output the below against my local instance of SQL Server 2012:
 
-![](/img/groupobject.png)
+![](/images/groupobject.png)

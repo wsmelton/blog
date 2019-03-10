@@ -15,11 +15,11 @@ The default value of zero (0) means unlimited, so it goes without warning that i
 
 I set this to one on my local SQL Server 2012 instance and restarted the instance; because any current connections are not going to be closed automatically by setting this value. Once I tried to connect back to my instance I receive this error:
 
-![](/img/maxconnections_1.png)
+![](/images/maxconnections_1.png)
 
 Now what do you do to get access again? The most voted answer to the question states try using the DAC to connect. Alright, let us see what happens:
 
-![](/img/maxconnections_2.png)
+![](/images/maxconnections_2.png)
 
 I will note above is clicking on "New Query" in SSMS, because the initial connection prompt you get when opening SSMS does not support a DAC connection. In doing this it let me connect, but it is not guaranteed in every situation. So what is another method you ask? PowerShell, I answer.
 

@@ -22,12 +22,12 @@ In this debug session I "borrowed" a lab environment from Chrissy ([@cl](https:/
 
 1. Created AD account [BASE\shawntest] that does not have access to the sql2008 instance.
 
-![](/img/debug_dbatools_1.png)
+![](/images/debug_dbatools_1.png)
 
 2. Started VS Code as that AD account on the remote machine (will run command under this context)
 3. Verified in the terminal that BASE\shawntest was returned with _whoami_
 
-![](/img/debug_dbatools_2.png)
+![](/images/debug_dbatools_2.png)
 
 4. Created test login on sql2008 with sysadmin rights to be my "dba" account, this will be the credential I pass into the dbatools command.
 
@@ -64,7 +64,7 @@ In that effect it was impossible to debug the dbatools modules since they files 
 
 At this time to debug the module you need to set a variable to true in your PowerShell session: `$dbatools_dotsourcemodule = $true`. Setting this global variable will cause the code in the module to be dot sourced so we can run the debugger.
 
-![](/img/debug_dbatools_3.png)
+![](/images/debug_dbatools_3.png)
 
 ## Into the Weeds
 
@@ -82,17 +82,17 @@ When the breakpoint was hit I simply **step-into** the `Connect-SqlInstance` com
 
 Cool part of debugging with VS Code is you can hover over a variable and see the contents of it:
 
-![](/img/debug_dbatools_4.png)
+![](/images/debug_dbatools_4.png)
 
-![](/img/debug_dbatools_5.png)
+![](/images/debug_dbatools_5.png)
 
 So the key item I found was when we build the server object in SMO we are passing in the name of the instance received. This is when the login failed messages are being hit on a given instance. You can see from the screenshot below that I have stepped to the statement on line 154, so the statement on line 153 has already been executed. This line is **before** we actually pass in the credential.
 
-![](/img/debug_dbatools_6.png)
+![](/images/debug_dbatools_6.png)
 
 So you can see on the left side the true login value is null, meaning we have not passed that in yet, and the command went ahead and tried to login with the context of the user running the PowerShell session. The additional issue is that any line that called on that `$server` variable was causing additional failed logins to hit the sql2008 instance.
 
-![](/img/debug_dbatools_7.png)
+![](/images/debug_dbatools_7.png)
 
 The issue with the MinimumVersion parameter was it was being checked before we actually made a connection in SMO. So that was an easy fix by just moving that section of code immediately after we make a connection.
 
@@ -107,6 +107,6 @@ $server = New-Object Microsoft.SqlServer.Management.Smo.Server $convertedSqlInst
 
 So as just a hot fix at the time was to pass in a false value. This ended up after testing causing a few issues elsewhere with output.
 
-![](/img/debug_dbatools_8.png)
+![](/images/debug_dbatools_8.png)
 
 Header image provided via [pixabay](https://pixabay.com/en/fly-swatter-flyswatter-fly-flap-bug-149265/)

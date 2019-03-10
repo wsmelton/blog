@@ -13,11 +13,11 @@ SQL Server Data Tools (SSDT) brought about changes in BI and database developmen
 
 If you have installed SSDT for SQL Server 2012 you will note that it actually is only installing SSDT-BI by viewing the new project window:
 
-![](/img/spork1.png)
+![](/images/spork1.png)
 
 What?!!?? You want me to install the same thing again? Well it appears that even though they share the same title of application they are now separate. If you read the blog post on MSDN, <a href="http://blogs.msdn.com/b/ssdt/archive/2014/01/31/ssdt-and-visual-studio-versions.aspx" target="_blank">SSDT and Visual Studio Versions</a>, and note the comments. I particular liked this one:
 
-![](/img/spork2.png)
+![](/images/spork2.png)
 
 What that means is SSDT is now something that encompasses two things: Database Development and BI Development (reference a fork + spoon = spork) but two different teams are developing each one. Glad that confusion is over.
 
