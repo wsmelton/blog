@@ -16,7 +16,7 @@ What is this secret formula? PowerShell and the <a href="https://dbatools.io" ta
 
 You can use `Find-DbaCommand` to explore all the commands in the module, this will let you search an index of the commands via pattern. So if you wanted to find all the commands around disk:
 
-![](/images/dbatools-agent_finddbacommand.png)
+![](/img/dbatools-agent_finddbacommand.png)
 
 ### Running via SQL Server Agent
 
@@ -53,7 +53,7 @@ As a small example let's say we have the following requirements:
 
 So using the `Find-DbaCommand` in the screenshot above we found we can use `Get-DbaDatabaseSpace` to get the space usage for each database. Checking the help content of the file I found it includes a parameter `-IncludeSystem` that will let me include the system database information as well.
 
-![](/images/dbatools-agent_getdbadatabasespace.png)
+![](/img/dbatools-agent_getdbadatabasespace.png)
 
 #### Collect it into a table
 
@@ -121,7 +121,7 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobserver @job_id = @jobId, @server_name = N'
 GO
 ```
 
-![](/images/dbatools-agent_captureddata.png)
+![](/img/dbatools-agent_captureddata.png)
 
 ##### Use a File
 

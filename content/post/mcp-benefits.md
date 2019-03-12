@@ -10,7 +10,7 @@ Certifications...it's a hot topic for some people.  The main argument comes from
 Anyway I was actually logging into the MCP site (not linking it because a login required) and found a new feature that I don't recall being there..."Virtual Business Card".  They have added in the ability to create a business card of sorts as a web page.
 
 It takes you through a nice little wizard driven site that you pick a theme and then add all your information on the card:
-![](/images/virtualcard.jpg)
+![](/img/virtualcard.jpg)
 
 Once you get everything setup you can preview your site and it will provide you with the HMTL code to copy and paste in your e-mail or on your blog:
 <a href="https://www.mcpvirtualbusinesscard.com/VBCServer/shawnmelton/card" target="_blank">View my MCP Certifications (card)</a>

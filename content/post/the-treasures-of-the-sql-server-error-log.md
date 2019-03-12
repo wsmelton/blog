@@ -24,7 +24,7 @@ $srv = New-Object Microsoft.Sqlserver.Management.Smo.Server ORKO\SQL12
 $srv.ReadErrorLog()
 ```
 
-![](/images/read_errorlog.png)
+![](/img/read_errorlog.png)
 
 If you do a Get-Member on the method you can see the property values that you can base a filter on: LogDate, ProcessInfo, Text. You can obviously do filtering even easier passing this to Out-GridView, but I will let you play with that on your own.
 
@@ -35,7 +35,7 @@ $srv = New-Object Microsoft.Sqlserver.Management.Smo.Server ORKO\SQL12
 $srv.ReadErrorLog() | where {$_.ProcessInfo -eq "Logon"}
 ```
 
-![](/images/read_errorlog2.png)
+![](/img/read_errorlog2.png)
 
 Now if you have an instance configured to log successful and failed login attempts you would want to filter the Text on “failed” to limit the results. As well your error log would obviously be a considerable size on active instances so it can take some time using this method, but it offers a nice break.
 

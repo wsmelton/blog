@@ -21,6 +21,6 @@ This portion of the code is where you will adjust it for your environment: `{$_.
 
 This is a screenshot of what your output should resemble. (Do you see the excessive or un-needed privilege returned in the output?):
 
-![](/images/results.jpg)
+![](/img/results.jpg)
 
 **_A little bit of a caveat for you on this code though is that it will only work on domain member servers. For some reason, that I never bothered to look up, the RSOP namespace is not available or accessible on stand-alone servers._**

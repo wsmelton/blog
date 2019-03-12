@@ -12,7 +12,7 @@ I have worked in various operation support roles in my career. Which while some 
 
 I am a [Microsoft Cloud and Datacenter Management MVP](https://www.mvp.microsoft.com/en-us/PublicProfile/5002856?fullName=Shawn%20%20Melton).
 
-![](/images/MVP_Logo_Horizontal_Secondary_White_RGB_300ppi.png)
+![](/img/MVP_Logo_Horizontal_Secondary_White_RGB_300ppi.png)
 
 ### Resume
 

@@ -6,7 +6,7 @@ draft: false
 
 I decided to jump into playing with Windows Azure today. I heard on Twitter yesterday that Azure had SQL Server 2014 CTP2 available. After waiting about 30 minutes I was able to login and see this:
 
-![](/images/azure_sql2014.png)
+![](/img/azure_sql2014.png)
 
 Well the first thing I wanted to check out was the SQLPS module. Fired up PowerShell and fired off this command: `Import-Module SQLPS –Verbose`
 

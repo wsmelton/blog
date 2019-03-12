@@ -10,18 +10,18 @@ Ok now that you have read that, you saw the T-SQL code to find the server-level 
 
 So on my test system at home I have `[myUser]`, with the current permissions showing below (retrieved using Brian’s T-SQL code).
 
-![](/images/current_perms_thumb.jpg)
+![](/img/current_perms_thumb.jpg)
 
 Now I am going to grant the account `VIEW SERVER STATE` and `VIEW ANY DATABASE`. Running the T-SQL code again will show you this:
 
-![](/images/new_perms_tsql_thumb.jpg)
+![](/img/new_perms_tsql_thumb.jpg)
 
 Now you see this using SSMS by going to the properties of your login you are interested in, click on “Securables” in the left pane. You should see this window:
 
-![](/images/securables_empty_thumb.jpg)
+![](/img/securables_empty_thumb.jpg)
 
 Now click on the “Search” button. You are presented with options as to what objects you want SSMS to search for, I chose “The server…”. You can play around later to see what the options do if you like, these selections are not remembered so once you close the window they go away. After clicking OK you will see your instance name show up under Securables and the bottom pain will show all the instance level permissions. I scroll all the way to the bottom and will see the permissions I assigned to my login:
 
-![](/images/securables_showing_thumb.jpg)
+![](/img/securables_showing_thumb.jpg)
 
 That is all for now…

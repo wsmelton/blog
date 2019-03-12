@@ -1,9 +1,51 @@
-baseURL = "https://wsmelton.github.io/"
+baseURL = "https://example.com"
 languageCode = "en-us"
+theme = "minimal-bootstrap-hugo-theme"
+
 title = "Shawn's Notebook"
-theme = "basics"
 googleAnalytics = "UA-85098649-1"
 
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
 [params]
-author = "Shawn Melton"
-github = "wsmelton"
+  description = ""
+  contentBackgroundColor = "#fff"
+  contentTextColor = "#212529"
+  contentLinkColor = "#007bff"
+  contentLinkHoverColor = "#0056b3"
+  navbarBackgroundColor = "#212529"
+  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
+  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
+  wrapperMaxWidth = "800px"
+  customDateFormat = "2006-Jan-02"
+  customCodeStyle = true
+  customBlockquoteStyle = true
+  showPostSummary = false
+  googleAnalytics = "UA-123456789-1"
+  cookieConsent = true
+  includeBootstrapJs = false
+  faviconSafariPinnedTabColor = "#5bbad5"
+  faviconMsApplicationTileColor = "#da532c"
+  faviconThemeColor = "#ffffff"
+
+[menu]
+  [[menu.nav]]
+  name = "Posts"
+  url = "/"
+  weight = 1
+  [[menu.nav]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 2
+  [[menu.nav]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+  [[menu.nav]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 4

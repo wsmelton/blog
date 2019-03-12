@@ -17,7 +17,7 @@ GitHub posted on their [changelog](https://blog.github.com/changelog/) at the st
 
 We now have multiple template options to chose from based on your need or issue. Now when you go to our [issues](https://github.com/sqlcollaborative/dbatools/issues) and click on the "New Issue" button you are taken to a page that gives you [choices](https://github.com/sqlcollaborative/dbatools/issues/new/choose):
 
-![](/images/github_issue_choose.png)
+![](/img/github_issue_choose.png)
 
 ## Setup
 
@@ -27,28 +27,28 @@ To get started with this it takes just one or two steps:
 
 * Go to the Settings of the repository
 
-![](/images/github_issue_settings.png)
+![](/img/github_issue_settings.png)
 
 * Under the "Features" section you will see a button  "Set up templates", click on that button.
 
-![](/images/github_issue_settings_2.png)
+![](/img/github_issue_settings_2.png)
 
 * You are now presented with a screen that shows no templates created.
 
-![](/images/github_issue_settings_3.png)
+![](/img/github_issue_settings_3.png)
 
 * You can select the drop down
 
-![](/images/github_issue_settings_4.png)
+![](/img/github_issue_settings_4.png)
 
 * The two canned templates included are for bug and feature request.
 * Add each one and then you will see an option to "Preview and Edit"
 
-![](/images/github_issue_settings_5.png)
+![](/img/github_issue_settings_5.png)
 
 * From there you can an option to do 3 things:
 
-![](/images/github_issue_settings_6.png)
+![](/img/github_issue_settings_6.png)
 
 1. Close the preview
 2. Delete the template
@@ -58,13 +58,13 @@ You can see out-of-the-box that they provide a very good template, but you are f
 
 Once you have all those templates added and edited, you will need to use the "Propose changes" button on the top right to commit the changes. Clicking on that button simply provides the usual form to commit changes to the repository:
 
-![](/images/github_issues_settings_7.png)
+![](/img/github_issues_settings_7.png)
 
 > NOTE: The templates have to be committed to the default branch of the repository in order for them to be accessed/usable.
 
 Once you commit and merge the changes you will find the templates are created under the following directory of the repository: `.github\ISSUE_TEMPLATES`.
 
-![](/images/github_issues_settings_8.png)
+![](/img/github_issues_settings_8.png)
 
 ## Reminder
 

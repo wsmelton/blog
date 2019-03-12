@@ -4,7 +4,7 @@ date: 2010-08-02T05:53:00-06:00
 draft: false
 
 ---
-![](/images/withpower.jpg)
+![](/img/withpower.jpg)
 
 If you have not heard yet I submitted an email in a <a href="http://facility9.com/2010/07/03/msdn-2010-contest" target="_blank">contest</a> a few months back now, that was run by Jeremiah Peschka (<a href="http://facility9.com/" target="_blank">blog </a>`|` <a href="http://twitter.com/peschkaj" target="_blank">twitter</a>) for 1 of 3 MSDN subscriptions. I found out not long after that I was one of the <a href="http://facility9.com/2010/07/12/msdn-contest-winners" target="_blank">winners</a>.
 

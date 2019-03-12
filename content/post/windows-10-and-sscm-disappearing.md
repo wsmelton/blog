@@ -8,7 +8,7 @@ I have been using Windows 10 since it was released on my main (well only) laptop
 
 Why it does this I have not found as of yet but it is easily fixed. The "Microsoft Common Console Document" or msc files for SSCM are stored under `C:\Windows\SysWOW64`.
 
-![](/images/mscfilesforsscm.jpg)
+![](/img/mscfilesforsscm.jpg)
 
 If you want to just create new shortcuts, right-click each one and send to your desktop. You can then just move those shortcuts, after renaming them if you wish, to `C:\ProgramData\Microsoft\Windows\Start Menu\Programs` and go into the appropriate folder for your version of SQL Server.
 

@@ -30,7 +30,7 @@ There is more than one way to do things in PowerShell, this is just the way I de
 
 The first section I put in the script was a comment block that contains the BOL links for the “Server Configuration Options (SQL Server)” page of each version:
 
-![](/images/check_instance_1.png)
+![](/img/check_instance_1.png)
 
 I went back and forth a few times on how to actually build out a list of the configuration option names and default values based on the current versions of SQL Server that are available. I knew I needed the information in order to validate it against a SQL Server instance, no matter what version I might try. In Mike’s script he simply scripted out temporary tables with this information. So I kept to the same concept and decided to use a **data table** (<a href="http://msdn.microsoft.com/en-us/library/system.data.datatable(v=vs.110).aspx" target="_blank">System.Data.DataTable</a>).
 
@@ -41,11 +41,11 @@ I tried to make the columns self-explanatory so the column naming convention I c
 - `ConfigOption` – name of the configuration option in <a href="http://technet.microsoft.com/en-us/library/ms188787.aspx" target="_blank">`sp_configure`</a> or <a href="http://technet.microsoft.com/en-us/library/ms188345.aspx" target="_blank">`sys.configurations`</a> with new versions of SQL Server. The list contains those configuration options available from SQL Server 2014 to SQL Server 2000, as stated in the associated links in BOL for each.
 - `Default_<4 digit year of SQL Version>` – there is a column for each version of SQL Server the script will support (e.g. `Default_2012`). If a ConfigOption name is not supported or included in any particular version this value is set to –9 (negative nine).
 
-![](/images/check_instance_2.png)
+![](/img/check_instance_2.png)
 
 An example of the –9 usage, “access check cache bucket count” is a configuration option only available in SQL Server 2008 and higher:
 
-![](/images/check_instance_3.png)
+![](/img/check_instance_3.png)
 
 ### A few Examples
 
@@ -53,11 +53,11 @@ Ok, I am going to assume the reader is already familiar with <a href="http://tec
 
 - To list out the complete data table execute this command: `$sqlConfigDefaults | Out-GridView`
 
-![](/images/check_instance_4.png)
+![](/img/check_instance_4.png)
 
 - I have variables already in the script to list out each version (reference lines 723-729 in the script). So if you wanted to list out the options for SQL Server 2014: `$sql2014_Defaults | Out-GridView`
 
-![](/images/check_instance_5.png)
+![](/img/check_instance_5.png)
 
 I could have filtered out the columns for the other versions, but I thought it to be a nice reference point to see those options that are still around from lesser versions. You can adjust this if you wish, but note that these variables are utilized in the function as well.
 

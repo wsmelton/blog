@@ -14,7 +14,7 @@ So I went to TechNet to get a definition of both, <a href="http://technet.micros
 
 So (here comes some of the peculiars), click on this option in the Jump List and you will notice the UAC prompt (user access control) that pops up in Windows 7 warning you that Administrative privilege is fixing to be used. Then a new PowerShell prompt opens up and you see something similar to this:
 
-![](/images/importsystemmodules_thumb.jpg)
+![](/img/importsystemmodules_thumb.jpg)
 
 So it goes through and loads the modules.  Which you may ask how does it know what modules to load? Well if you go look at the directory `C:\Windows\System32\WindowsPowerShell\v1.0\Modules` you will find out.
 
@@ -22,21 +22,21 @@ Uh…SQUIRREL!!! Side note here, you notice it shows v1.0 as the directory when 
 
 First, once that gets done type in the command: `Get-Module –ListAvailable` and you will get this list:
 
-![](/images/importsystemmodules_moduleslist_thumb.jpg)
+![](/img/importsystemmodules_moduleslist_thumb.jpg)
 
 Now all this is under the context of running the prompt under the Administrator, so if I open another shell window those modules are not loaded…or are they? So I open up another prompt, that opens with my username, and execute the same command and I receive this list:
 
-![](/images/importsystemmodules_moduleslist_myacct_thumb.jpg)
+![](/img/importsystemmodules_moduleslist_myacct_thumb.jpg)
 
 Not much difference here, other than the additional ExportedCommands that show up for PSDiagnostics. Peculiar…so since modules can be used to control snap-ins I next wanted to see what snap-ins changed between each session as well.
 
 Administrator session snap-in list
 
-![](/images/importsystemmodules_snapinlist_admin_thumb.jpg)
+![](/img/importsystemmodules_snapinlist_admin_thumb.jpg)
 
 My username session snap-in list
 
-![](/images/importsystemmodules_snapinlist_me_thumb.jpg)
+![](/img/importsystemmodules_snapinlist_me_thumb.jpg)
 
 Notice the two new ones that show now, again this is after clicking on the “Import System Modules” from the jump list for Windows PowerShell program pinned to my taskbar?  Well if you did not catch it, the Administrator session now has access to the SQL Server 2008 snap-ins.  They only show up after clicking the import command.  Which these snap-ins are available because I have SQL Server 2008 Management Studio installed on my desktop.
 

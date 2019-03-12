@@ -24,58 +24,58 @@ I have typed a good bit in the past year evangelizing about Visual Studio Code o
 
 The first step is to download the installer from [here](https://visualstudio.com/free-developer-offers). You will also need to [download Git for Windows](https://git-scm.com/download/win) on your machine. The install for Git is very basic (just click next), so I will not go over that installation. I will walk through the installation of Visual Studio 2017 Community Edition below showing the screenshots in the order I received:
 
-![](/images/vs-install_1.png)
+![](/img/vs-install_1.png)
 
 Click continue
 
-![](/images/vs-install_2.png)
+![](/img/vs-install_2.png)
 
 At this point, you are prompted to select a workload and individual components. You can go through and select the ones you desire, but I am opting to skip this process right now. (Adding more workloads does add on time for the install process).
 
-![](/images/vs-install_3.png)
+![](/img/vs-install_3.png)
 
 You will get a screen showing the installation progress (VS updates will also have this same prompt now as well):
 
-![](/images/vs-install_4.png)
+![](/img/vs-install_4.png)
 
 Once that is completed you can click on "Launch" button:
 
-![](/images/vs-install_5.png)
+![](/img/vs-install_5.png)
 
 One final step before VS opens is to [sign in with your Live account](https://msdn.microsoft.com/en-us/library/dn457348.aspx#Anchor_0).
 
-![](/images/vs-install_6.png)
+![](/img/vs-install_6.png)
 
-![](/images/vs-install_7.png)
+![](/img/vs-install_7.png)
 
 You should now be presented with something similar to this:
 
-![](/images/vs-install_8.png)
+![](/img/vs-install_8.png)
 
 ### Extensions
 
 Now that we have VS installed we will need to add the PowerShell extension. Start by going to Tools > Extensions and Updates...
 
-![](/images/vs-install_9.png)
+![](/img/vs-install_9.png)
 
 1. Select "Online"
 2. Search for "PowerShell"
 3. Select "PowerShell Tools for Visual Studio"
 4. Click Download
 
-![](/images/vs-install_10.png)
+![](/img/vs-install_10.png)
 
 Once that download completes you can close that window, and then exit out of Visual Studio. It will vary but after a few seconds, you will see the VSIX Installer open up and begin installing the extensions.
 
 It will first initialize and then give you a prompt to click "Modify" for the install to continue:
 
-![](/images/vs-install_12.png)
+![](/img/vs-install_12.png)
 
-![](/images/vs-install_13.png)
+![](/img/vs-install_13.png)
 
 On my machine, the install of the PowerShell extension took close to a full hour. Once the extension install is complete, just click "Close":
 
-![](/images/vs-install_14.png)
+![](/img/vs-install_14.png)
 
 ### Versions
 
@@ -94,15 +94,15 @@ There is a downside to the folder support in VS: No project template is associat
 
 If you are developing a brand new PowerShell module, you simply use the PowerShell Module project template. You can do this via File > New > Project, then select the template and give it a name.
 
-![](/images/vs-install_15.png)
+![](/img/vs-install_15.png)
 
 This will create a very basic module file structure. You can check the box for "Create new Git repository" if you would like the directory initialized as a local repository.
 
-![](/images/vs-install_16.png)
+![](/img/vs-install_16.png)
 
 I like to have the test files put in a test folder, so you can create a folder and just drag that test file into that folder. The next step is to right-click on the project and go to Properties so you can set the manifest information:
 
-![](/images/vs-install_17.png)
+![](/img/vs-install_17.png)
 
 I only set the root module, this will be what is run when you do `Import-Module MyFirstModule`. I then gave it a description and adjust the version information to my preferences. You can use the GUI to adjust the other information in the manifest or simply open the "psd1" file in the editor. It is just your preference, although I did find that updating the file directly does not seem to update the UI properties for some reason (not sure if this is a bug or not).
 
@@ -118,11 +118,11 @@ You can clone or do the initial pull of a repository a few different ways. It de
 
 To start you will go to the "Team Explorer" window and click on "Clone". You will need to provide the URL to the GitHub repository, in this case, I'm using my forked repository of dbatools. Just provide a local path, you can use the default if you want but I keep all of the repositories I contribute to under `C:\GitHub`
 
-![](/images/vs-install_18.png)
+![](/img/vs-install_18.png)
 
 Just click on the "Clone" button and it will begin to pull down all the files for the repository. Once that is complete VS will open the Solution Explorer and you will see the folder view of the dbatools modules.
 
-![](/images/vs-install_19.png)
+![](/img/vs-install_19.png)
 
 If you click on the "Solutions and Folders" button you will notice with the dbatools repository there is a solution file found. This is the C# project for the "dbatools.dll" and library source code. If you are interested, selecting the "sln" file will open that view in Solutions Explorer and you can traverse the code for that side of the module.
 

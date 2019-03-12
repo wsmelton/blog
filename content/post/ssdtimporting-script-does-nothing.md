@@ -8,14 +8,14 @@ I have been working with <a href="http://msdn.microsoft.com/en-us/data/tools.asp
 
 So, a simple task to start with is create a new SQL Database Project, and import a script (.sql) file to bring in all the database objects. You would think it was simple until you go through the process, get no errors and no objects in your project.
 
-![](/images/importmenu_thumb.jpg)
+![](/img/importmenu_thumb.jpg)
 
-![](/images/importscriptfinish_thumb.jpg)
+![](/img/importscriptfinish_thumb.jpg)
 
 Mother Hubbard, what the heck is the matter? No errors, and the summary log does not give any help either. Well, I got curious so I opened up the script in Visual Studio and received this message:
 
-![](/images/importproblem_thumb.jpg)
+![](/img/importproblem_thumb.jpg)
 
 Select “Yes”, and then save the file. Repeat the steps above and voila it works, at least for me. You will also notice it took a good bit more time to complete.
 
-![](/images/importsuccess_thumb.jpg)
+![](/img/importsuccess_thumb.jpg)

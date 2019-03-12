@@ -19,7 +19,7 @@ PS C:\> docker run -p 1416:1433 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=P@ssword12345
 
 The output of the pull command will look something like this:
 
-![](/images/dockerctppull.png)
+![](/img/dockerctppull.png)
 
 The second command starts a new container and output of this is:
 
@@ -78,7 +78,7 @@ docker-compose -f "docker-compose.yml" up -d --no-build
 
 The output of this command:
 
-![](/images/dockercompose.png)
+![](/img/dockercompose.png)
 
 As you can see one simple command does all that work for me. If you check docker network ls you will also see that a network for the containers is created as `sql19_network`, so whether you create 2 or 20 they will all be on the same network and be able to see each other.
 
@@ -96,6 +96,6 @@ function New-SqlContainer {
 
 If tomorrow Microsoft releases CTP 2.3, I simply update that docker-compose file, to increment the version, and issue the command `New-SqlContainer` in my PowerShell prompt. Docker will go through pull the latest image and then recreate the containers for me:
 
-![](/images/dockercompose2.png)
+![](/img/dockercompose2.png)
 
 _If a new image had to be pulled down you would see the output for that as well._

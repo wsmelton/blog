@@ -5,7 +5,7 @@ drafts: false
 tags: [powershell]
 ---
 
-![](/images/flickr_filecabinet.jpg "Source: Flickr (adesigna)")
+![](/img/flickr_filecabinet.jpg "Source: Flickr (adesigna)")
 
 Have you ever wanted to be like <del>Mike</del> Brent and <a href="http://www.brentozar.com/archive/2014/01/how-to-query-the-stackexchange-databases/" target="_blank">have your own local, sample StackExchange database</a>? Do you know what PowerShell is?
 

@@ -19,7 +19,7 @@ I have updated the script with help syntax so you can just view that via the `Ge
 
 For the "default" or RDP template file I just opened up Remote Desktop Connection (Windows Key + R &gt; mstsc.exe). Go through it and just set it to your preferences (Display, Local Resources, etc.). Then under the General tab click “Save As…”. Save the file to your preferred location and remember this is the path you will pass into the script. Then using Notepad open that file up and you will see something similar to this:
 
-![](/images/mydefault_thumb.jpg)
+![](/img/mydefault_thumb.jpg)
 
 The highlighted line is what you want to remove and then save the file. This line will be added by the script and include the server name passed into the parameter of the script.
 

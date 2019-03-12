@@ -19,7 +19,7 @@ The .NET 3.5 SP1 feature in Windows Server is referenced as `Net-Framework-Core
 Get-WindowsFeature Net*
 ```
 
-![](/images/netframeworkcore_ps.png)
+![](/img/netframeworkcore_ps.png)
 
 The below script is going first verify it is not installed and then will enable the feature (or technically install it I guess). In order to do this though you will need the OS media as you have to pass in the source path to `<drive letter>:\sources\sxs`. **Note: You have to execute this in an elevated PowerShell console, so "Run as Administrator".**
 

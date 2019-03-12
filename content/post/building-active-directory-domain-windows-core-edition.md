@@ -126,7 +126,7 @@ The module you will use to work with Active Directory is named appropriately "Ac
     Get-ADUser -Filter * -Properties Description | select Name, SamAccountName, Enabled, Description | ft -auto
 ```
 
-![](/images/lab_ad_domain_getaduser.png)
+![](/img/lab_ad_domain_getaduser.png)
 
 The "Filter" parameter is required for this command, and then the "Properties" is used to pull back properties that are not output by default (e.g. Description, PasswordExpired, etc.). You can use an asterick to have every property, but would stress doing this only in your lab environment.
 
@@ -136,11 +136,11 @@ The "Filter" parameter is required for this command, and then the "Properties" i
     Get-ADGroup -Filter * | select Name, SamAccountName | ft -auto
 ```
 
-![](/images/lab_ad_domain_getadgroup.png)
+![](/img/lab_ad_domain_getadgroup.png)
 
 ## Get-ADGroupMember
 
-![](/images/lab_ad_domain_getadgroupmember.png)
+![](/img/lab_ad_domain_getadgroupmember.png)
 
 ```powershell
     Get-ADGroup -Filter * | select Name, SamAccountName, GroupCategory, GroupScope | ft -auto
@@ -157,7 +157,7 @@ One prerequisite that is needed to create an account is providing the password. 
     New-ADUser -Name 'Bob The Builder' -SamAccountName BobTheBuilder -PasswordNeverExpires $true -AccountPassword $pwd -Enabled $true
 ```
 
-![](/images/lab_ad_domain_newaduser.png)
+![](/img/lab_ad_domain_newaduser.png)
 
 ## New-ADGroup
 
@@ -167,7 +167,7 @@ One parameter to note ont his command is the <a href="https://technet.microsoft.
     New-ADGroup -Name Tractors -GroupScope Global
 ```
 
-![](/images/lab_ad_domain_newadgroup.png)
+![](/img/lab_ad_domain_newadgroup.png)
 
 ## Add-ADGroupMember
 
@@ -177,7 +177,7 @@ The 2 parameters you deal with are the identity (group you want to work with) an
     Add-ADGroupMember -Identity Tractors -Members Scoop,Stretch
 ```
 
-![](/images/lab_ad_domain_addadgroupmembers.png)
+![](/img/lab_ad_domain_addadgroupmembers.png)
 
 ## Set-ADAccountPassword
 
@@ -187,7 +187,7 @@ You will need this to change the password for a given account. In this example I
     Set-ADAccountPassword -Identity BobTheBuilder -Reset -NewPassword (Get-Credential).Password
 ```
 
-![](/images/lab_ad_domain_setadaccountpassword.png)
+![](/img/lab_ad_domain_setadaccountpassword.png)
 
 ## Unlock-ADAccount
 

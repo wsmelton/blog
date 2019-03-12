@@ -28,12 +28,12 @@ There are 4 functions included in the current version of the script:
 
 I decided to also include help text with each function so loading the script into your PowerShell session you can simply use the Get-Help cmdlet and it will show you the information on each function. Adding the `-full` switch to the command will output more detailed information as well.
 
-![](/images/check_instances_p2_1.png)
+![](/img/check_instances_p2_1.png)
 
 ### A few examples
 
 As mentioned above the function help information also includes a few examples of each function. So if you want to see them you can simply use the Get-Help function along with the `–Examples` switch.
 
-![](/images/check_instances_p2_2.png)
+![](/img/check_instances_p2_2.png)
 
 Here is the <a href="https://github.com/wsmelton/scripts/blob/master/posh/Check-InstanceConfig.ps1" target="_blank">full script</a>. This link will always point to the current version of the script. My next blog post will explain the function in the script.

@@ -69,7 +69,7 @@ This configuration will start the debugger, launch the integrated terminal and s
 
 Once you hit a breakpoint, what do you do next? You have a number of choices:
 
-![](/images/debug_step_options.png)
+![](/img/debug_step_options.png)
 
 #### Start/Continue
 
@@ -105,11 +105,11 @@ One of the main differences between using ISE or Code is the UI itself. You can 
 
 Line breakpoints are going to be the most commonly used type you will generally use. **F9 is used to toggle breakpoints** on and off for both editors. Visually, though, there is a bit of a difference in how each editor shows the reference that a breakpoint is set:
 
-![](/images/debug_Code_vs_ISE.png)
+![](/img/debug_Code_vs_ISE.png)
 
 Now when you get to a point where you have multiple breakpoints this is where the ISE gets left behind. In the ISE you have a menu option to list all breakpoints, but all that does is run `Get-PSBreakpoint` command and output it to the console. Code, will give you a nice view in the debug panel of the breakpoints you have:
 
-![](/images/debug_Code_list_breakpoints.png)
+![](/img/debug_Code_list_breakpoints.png)
 
 #### Other Breakpoints
 

@@ -5,6 +5,3 @@
 [submodule "themes/minimal-bootstrap-hugo-theme"]
 	path = themes/minimal-bootstrap-hugo-theme
 	url = git@github.com:zwbetz-gh/minimal-bootstrap-hugo-theme.git
-[submodule "themes/indigo"]
-	path = themes/indigo
-	url = git@github.com:AngeloStavrow/indigo.git

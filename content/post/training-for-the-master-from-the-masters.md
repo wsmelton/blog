@@ -5,7 +5,7 @@ draft: false
 
 ---
 
-![](/images/sniper.jpg)
+![](/img/sniper.jpg)
 <font size="2" face="Arial Narrow">(Bottom left corner of this photo you’ll see the nose of the sniper) </font>
 
 A talent and a gift, what is the difference? I follow the definition that a talent is something you learn and a gift is something you were born with.

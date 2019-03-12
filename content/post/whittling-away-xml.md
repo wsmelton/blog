@@ -8,7 +8,7 @@ XML can be one of those things you come across and say “ah, there has got to b
 
 So how do you pull it out? I think ever one is lead to <a href="http://www.sqlservercentral.com/articles/deadlock/65658/" target="_blank">this article</a> on SQLServerCentral, by Jonathan Kehayias (<a href="http://www.sqlskills.com/blogs/jonathan/" target="_blank">blog</a> `|` <a href="http://twitter.com/SQLPoolBoy" target="_blank">twitter</a>). So that is how I normally pull it out.
 
-![](/images/deadlocks_xevents_xml.png)
+![](/img/deadlocks_xevents_xml.png)
 
 However that just provides a list of rows with the full XML document in each. Which if you only get a few and you never get them again, you might be alright with this…not so much for me. I wanted more information and a pretty table that parsed it all out. This is where I needed to figure out the XML stuff. I looked around the Internet trying to see if folks had already done this type of script, no luck.
 
@@ -20,6 +20,6 @@ That led me to try to find a script that parses through the Profiler deadlock gr
 
 After a bit of work going through it I ended up with the output:
 
-![](/images/deadlocks_xevents.png)
+![](/img/deadlocks_xevents.png)
 
 Now the script to get the output can be downloaded here: <a href="https://gist.github.com/wsmelton/43888ac05b7eee5bce65a58ed941881a" target="_blank">SystemHealth_Parsed_DeadlockInfo.sql</a>.
