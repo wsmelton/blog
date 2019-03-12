@@ -1,7 +1,10 @@
 ---
 title: "Azure Data Studio User Interface"
 date: 2019-03-11T12:00:00-06:00
+publishdate: 2019-03-11
+lastmod: 2019-03-12
 draft: false
+tags: [azuredatastudio]
 ---
 
 > Warning: This post is long but if you want to get familiar with Azure Data Studio as a first time user, hopefully it will be a good read for you.
