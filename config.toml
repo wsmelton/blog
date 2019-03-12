@@ -1,8 +1,8 @@
-baseURL = "https://example.com"
+baseURL = "https://wsmelton.github.io"
 languageCode = "en-us"
 theme = "minimal-bootstrap-hugo-theme"
 
-title = "Shawn's Notebook"
+title = "Shawn Melton"
 googleAnalytics = "UA-85098649-1"
 
 [taxonomies]
@@ -12,7 +12,7 @@ googleAnalytics = "UA-85098649-1"
   post = "/:filename/"
 
 [params]
-  description = ""
+  description = "Data and automation professional grounded in the cloud"
   contentBackgroundColor = "#fff"
   contentTextColor = "#212529"
   contentLinkColor = "#007bff"
