@@ -1,8 +1,7 @@
 ---
 title: "Azure Data Studio User Interface"
-date: 2019-03-11T21:00:00-06:00
+date: 2019-03-11T12:00:00-06:00
 draft: false
-notoc: falses
 ---
 
 > Warning: This post is long but if you want to get familiar with Azure Data Studio as a first time user, hopefully it will be a good read for you.
