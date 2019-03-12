@@ -1,9 +1,11 @@
 ---
 title: "Azure Data Studio User Interface"
-date: 2019-03-10T00:19:31-06:00
+date: 2019-03-11T21:00:00-06:00
 draft: false
 notoc: falses
 ---
+
+> Warning: This post is long but if you want to get familiar with Azure Data Studio as a first time user, hopefully it will be a good read for you.
 
 ## Short intro
 In September of 2018, Microsoft brought us Azure Data Studio (ADS). This is a cross-platform tool for querying and managing data development. It is meant to compliment SQL Server Management Studio (SSMS) but for those that do not wish to work on Windows it can be a tool of choice for connecting to both SQL Server and Azure SQL DB.
@@ -87,3 +89,69 @@ Once you run a restore or backup you will then see a list of the status whether 
 Which as of this writing the error for a failed backup only displays a generic one. I have [submitted a feature request](https://github.com/Microsoft/azuredatastudio/issues/4397) to have this error be more descriptive on the actual issue than a generic one.
 
 ![](/img/ads_activitybar_taskhistory_failure2.png)
+
+### Explorer
+
+Access using `CTRL + SHIFT + E`. This side bar is only active (or usable) when you have opened up a workspace (aka "folder").
+
+![](/img/ads_activitybar_explorer.png)
+
+### Search
+
+Access using `CTRL + SHIFT + F`. This one is only usable when you have a workspace open. It allows you to search and do the find/replace against files you have in the workspace.
+
+![](/img/ads_activitybar_search.png)
+
+### Source Control
+
+Access using `CTRL + SHIFT + G`. If you have a workspace open that has been initialized as a Git repository (or other source provider) then it will display various options for you to commit, stash, stage, add a comment message, etc. In the example screenshot I have a GitHub repository open from my local machine:
+
+![](/img/ads_activitybar_sourcecontrol.png)
+
+### Extensions
+
+Access using `CTRL + SHIFT + X`. This will be something you want to keep an eye on as time goes to find out what new extensions have been released by Microsoft and the community. The main ability of ADS is being able to extend it using extensions. Just go through and explorer this list when you have time; install one and give it a try (on a test instance obviously).
+
+![](/img/ads_activitybar_extensions.png)
+
+### Azure
+
+There is no shortcut key to access this one. Extensions that will support an activity bar item do not always include a shortcut keybinding. I'm going to spend a bit more time on this one as it requires a bit of setup to use. This revolves around access an Azure subscription and the Azure SQL service.
+
+![](/img/ads_activitybar_azure1.png)
+
+The following illustrates the steps needed to add your Azure account to ADS.
+
+![](/img/ads_activitybar_azure_addaccount.png)
+
+After a few seconds, you will have access to any subscription and Azure SQL resources your login has access to:
+
+![](/img/ads_activitybar_azure_account.png)
+
+Now you may wonder what all does this allow you to do or help you with? Basically just saves you the hassle of having to save all those connections and remembering what the full server name is for that new Azure SQL DB that was just deployed. When you put your mouse/cursor on a given server or database you will see a connect icon. Clicking on it will open the Connection dialog and have the Server and Database auto-populated for you.
+
+![](/img/ads_activitybar_azure_connecticon.png)
+
+![](/img/ads_activitybar_azure_connection.png)
+
+The above you can see the server name and database were populated. Since I chose a server it uses master database, if you choose a database though that given database would be placed in the box. (_It defaults to use `dbadmin` for the login no matter what server or database I selected._)
+
+## Extensions
+
+I want to circle back around to this one as it will vary how you actually get a given extension installed. The extensions that Microsoft published will just need you to click on that install button, and ADS will install it for you. The extensions that come from the community or vendors will tend to send you to GitHub repository.
+
+![](/img/ads_extensions_frk.png)
+
+When you click on the install you are taken to the release page on GitHub, which you will then need to download the vsix file on that page:
+
+![](/img/ads_extensions_frk_github.png)
+
+Then go back into ADS, under the extensions side bar you will click on the 3 dots and click on `Install from VSIX...`
+
+![](/img/ads_extensions_frk_addvsix.png)
+
+After that you will be prompted to browse to where you saved that file from GitHub. Then just click on the "Install" button, and since this particular one is a 3rd party (non-Microsoft item) you will get a security warning to click yes or no. If you chose to click yes you, after it installs, you will receive a prompt to `reload now`. ADS has to restart for any new extension to become active.
+
+## Additional help
+
+If you are looking to ask any more questions around using ADS, bugs you found or questions about documentation....or you just want to chat about Azure Data Studio you can come chat it up in SQLCommunity Slack channel. You will find us under `#azure-data-studio` and Microsoft is involved in this channel as well. You will commonly find Alan Yu checking in often during the day (he is one of the PMs over ADS).
