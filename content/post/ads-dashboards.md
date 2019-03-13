@@ -1,9 +1,9 @@
 ---
 title: "A Dash of Azure Data Studio"
-date: 2019-03-12T07:42:17-05:00
-publishdate: 2019-03-12
-lastmod: 2019-03-12
-draft: true
+date: 2019-03-13T17:00:00-05:00
+publishdate: 2019-03-13
+lastmod: 2019-03-13
+draft: false
 tags: [azuredatastudio]
 ---
 
